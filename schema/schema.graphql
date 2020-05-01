@@ -1,3 +1,11 @@
-type Query {
+type member {
+  id: Int!
   name: String!
+  email: String!
+  password: String!
+}
+
+type Query {
+  members: [member]!
+  login(email: String!, password: String!): member
 }

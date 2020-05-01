@@ -1,6 +1,9 @@
+import { members, login } from "./db";
+
 const resolvers = {
   Query: {
-    name: () => "Minchan",
+    members: () => members,
+    login: (_, { email, password }) => login(email, password),
   },
 };
 
