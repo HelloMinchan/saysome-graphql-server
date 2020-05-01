@@ -1,0 +1,27 @@
+{
+  "name": "saysome-server",
+  "version": "1.0.0",
+  "description": "SaySome API Server",
+  "main": "./src/index.js",
+  "repository": "https://github.com/HelloMinchan/saysome-server",
+  "author": "HelloMinchan",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --exec babel-node ./src/server.js",
+    "build": "rm -rf dist && babel src -d dist",
+    "start": "pm2 start ./dist/server.js",
+    "stop": "pm2 kill"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "dependencies": {
+    "graphql-yoga": "1.18.3"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.7.0"
+  }
+}
