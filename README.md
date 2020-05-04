@@ -1,2 +1,3 @@
-# saysome-server
-SaySome API Server
+# saysome-graphql-server
+
+SaySome GraphQL API Server

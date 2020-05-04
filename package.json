@@ -1,9 +1,9 @@
 {
-  "name": "saysome-server",
+  "name": "saysome-graphql-server",
   "version": "1.0.0",
-  "description": "SaySome API Server",
+  "description": "SaySome GraphQL API Server",
   "main": "./src/index.js",
-  "repository": "https://github.com/HelloMinchan/saysome-server",
+  "repository": "https://github.com/HelloMinchan/saysome-graphql-server",
   "author": "HelloMinchan",
   "license": "MIT",
   "scripts": {
